@@ -1,5 +1,5 @@
 [package]
-name = "seanifyv2"
+name = "seanify_backend"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,5 +7,6 @@ edition = "2021"
 
 [dependencies]
 warp = { version = "0.3.2", features = ["tokio-rustls", "compression-brotli", "compression", "tls"] }
+tokio = { version = "1.20.0", features = ["macros", "rt-multi-thread"] }
 serde = { version = "1.0.140", features = ["derive"] }
-sha1 = "0.10.0" # to determine 
+sha1 = "0.10.0" # to determine music id, we use sha1 for speed
